@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <%- include('imports'); -%>
+</head>
+
+<body>
+
+    <%- include('navbar'); -%>
+
+        <%- include('banner'); -%>
+
+            <div class="container">
+                <div class="row">
+                    <% actuadors.forEach((actuador) => { %>
+                        <%- include('actuador_card', { actuador: actuador }); -%>
+                            <% }); %>
+                </div>
+            </div>
+            <p>index.ejs</p>
+</body>
+
+</html>

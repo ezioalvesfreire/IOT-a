@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sensor</title>
+    <%- include('../../imports'); -%>
+</head>
+
+<body>
+    <%- include('../../navbar'); -%>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Novo dispositivo de medição</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="create" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="sensorTitle">Título</label>
+                            <input name="title" type="text" class="form-control" id="sensorTitle" placeholder="Título do dispositivo de medição">
+                        </div>
+                        <div class="form-group">
+                            <label for="sensorImage">Imagem</label>
+                            <input name="image" type="file" class="form-control" id="sensorImage" placeholder="Imagem do dispositivo de medição">
+                        </div>
+                        <div class="row">
+
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Título</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    corpo da tabela
+                                    <tr>
+                                        <td>
+                                            alguma coisa
+                                        </td>
+                                        <td>
+                                            outra coisa
+                                        </td>
+                                    </tr>
+                                    asdfasdf!
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+            </div>
+</body>
+
+</html>

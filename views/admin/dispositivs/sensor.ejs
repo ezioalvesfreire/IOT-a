@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sensors</title>
+
+    <p>sensors.ejs</p>
+
+    <%- include('../../imports'); -%>
+</head>
+
+<body>
+    <%- include('../../navbar'); -%>
+
+        <div class="container">
+            <div class="row">
+                <h2>Gerenciamento de dispositivos controlador de detectores</2>
+            </div>
+
+            <div class="row mb-2">
+                <a href="/admin/sensors/createSensor" class="btn btn-success">NOVO DISPOSITIVO</a>
+            </div>
+
+            <div class="row">
+
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% sensors.forEach((sensor) => { %>
+                            <tr>
+                                <td>
+                                    <%= sensor.id %>
+                                </td>
+                                <td>
+                                    <%= sensor.title %>
+                                </td>
+                                <td>
+                                    <%= sensor.model %>
+                                </td>
+                                <td>
+                                    <%= sensor.description %>
+                                </td>
+                            </tr>
+                            <% }); %>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+
+
+</html>

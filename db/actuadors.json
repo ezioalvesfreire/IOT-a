@@ -1,0 +1,18 @@
+[{
+        "id": 1,
+        "title": "Luz da Sala",
+        "image": "luz.jpeg",
+        "description": "Acenda ou apague a luz da sala",
+        "body": "tenha o controle da iluminação da sala remotamente em suas mãos.",
+        "status": 1
+    },
+    {
+        "id": 2,
+        "title": "Luz da cozinha",
+        "image": "luz.jpeg",
+        "description": "Acenda ou pague a luz da cozinha",
+        "body": "tenha o controle da iluminação da cozinha remotamente em suas mãos.",
+        "status": 1
+    }
+
+]

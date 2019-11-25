@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <%- include('imports'); -%>
+    </head>
+  
+    <body>
+		
+        <%- include('navbar'); -%>
+		
+		 <% lista_projects.forEach((lista_projects) => { %>
+
+            <div class="row no-gutters">  
+				<h1><%= lista_projects.name %></h1><br>
+					<iframe width="100%" height="615" src="<%= `https://www.youtube.com/embed/${lista_projects.image}` %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br><br><br>
+            	<div><%= lista_projects.description %></div>
+            </div>
+
+		<% }); %>
+    </body>
+</html>

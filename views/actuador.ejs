@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <%- include('imports'); -%>
+</head>
+
+<body>
+    <%- include('navbar'); -%>
+
+        <!-- o nome de origem desta pagina é index.ejs-->
+
+        <div class="container">
+            <div class="row">
+                <div class="dispositive-detail">
+                    <img src="/images/<%= actuador.image %>" />
+                    <h1>
+                        <%= actuador.title %>
+                    </h1>
+                    <p>
+                        <%= actuador.body %>
+                    </p>
+                </div>
+                <div><a href="/actuadors/<%= actuador.id %>" class="btn btn-primary">ON/OFF - <%= actuador.id %>actuador.ejs</a> </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="/">HOME</a>
+    <a class="navbar-brand" href="/">SMART HOME</a>
+    <a class="navbar-brand" href="/cardsActuador">ATUADORES</a>
+    <a class="navbar-brand" href="/cardsSensors">SENSORES</a>
+    <!--passar aqui o caminho de temperatura-->
+    <a class="navbar-brand" href="/movies">VIDEO BLOG</a>
+
+    <a class="nav-link dropdown-toggle navbar-brand" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adm Dispositivos</a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="/admin/actuadors">ATUADORES</a>
+        <a class="dropdown-item" href="/admin/sensors">SENSORES</a>
+    </div>
+
+    <% if (locals.loggedUser) { %>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle  navbar-brand" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <%= locals.loggedUser.email %>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/auth/logout">Sair</a>
+                </div>
+            </li>
+        </ul>
+        <% } %>
+
+</nav>

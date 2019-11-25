@@ -1,0 +1,13 @@
+<div class="card" style="width: 19rem;">
+    <img src="<%= `/images/${actuador.image}` %>" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">
+            <%= actuador.title %>
+        </h5>
+        <p class="card-text">
+            <%= actuador.description %>
+        </p>
+
+        <a href="/actuadors/<%= actuador.id %>" class="btn btn-primary">ON/OFF-<%= actuador.id %></a>
+    </div>
+</div>

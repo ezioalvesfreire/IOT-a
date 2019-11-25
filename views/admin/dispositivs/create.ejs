@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actuadors</title>
+    <%- include('../../imports'); -%>
+</head>
+
+<body>
+    <%- include('../../navbar'); -%>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Atuadores</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="create" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="actuadorTitle">Local</label>
+                            <input name="title" type="text" class="form-control" id="actuadorTitle" placeholder="local onde o dispositivo será controlado">
+                        </div>
+                        <div class="form-group">
+                            <label for="actuadorImage">Imagem</label>
+                            <input name="image" type="file" class="form-control" id="actuadorImage" placeholder="Imagem do actuador">
+                        </div>
+                        <div class="form-group">
+                            <label for="actuadorDescription">Descrição</label>
+                            <textarea name="description" type="text" class="form-control" id="actuadorDescription" placeholder=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="actuadorBody">Mais detalhes</label>
+                            <textarea name="atuadorBody" type="text" class="form-control" id="actuadorBody" placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+            </div>
+</body>
+
+</html>
